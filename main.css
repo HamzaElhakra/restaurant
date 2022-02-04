@@ -1,0 +1,58 @@
+body, html {
+    direction: rtl;
+}
+#big-section {
+    border-radius: 18px;
+}
+#big-section .big-image{
+    border-radius: 18px;
+    border: 4px dashed red;
+}
+#media {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid orange;
+}
+#media .cercle {
+    background: #ababab;
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+#media .cercle.active {
+    background: black;
+}
+#media .btn {
+    border-radius: 0px !important;
+}
+#media p {
+    padding: 0.375rem 0.75rem;
+}
+.share h6 {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto 30px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+footer img {
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+}
+
