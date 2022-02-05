@@ -1,16 +1,16 @@
 body, html {
     direction: rtl;
 }
-.content-section {
+.content-haeder {
     position: relative;
 }
-.content-section .social-links {
+.content-haeder .social-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 5rem;
+    flex-wrap: nowrap;
+    column-gap: 4rem;
 }
-.content-section .social-links .link-item img{
+.content-haeder .social-links .link-item img{
     position: absolute;
     top: 75%;
 }
