@@ -51,6 +51,9 @@ body, html {
     margin-bottom: 20px;
 
 }
+.icons .link {
+    text-decoration: none;
+}
 footer img {
     border-top-left-radius: 50px !important;
     border-top-right-radius: 50px !important;
