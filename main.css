@@ -1,6 +1,19 @@
 body, html {
     direction: rtl;
 }
+.content-section {
+    position: relative;
+}
+.content-section .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+}
+.content-section .social-links .link-item img{
+    position: absolute;
+    top: 75%;
+}
 #big-section {
     border-radius: 18px;
 }
