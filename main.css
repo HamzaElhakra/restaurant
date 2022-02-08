@@ -1,26 +1,155 @@
-body, html {
+* {
+    box-sizing: border-box;
+}
+html,
+body {
     direction: rtl;
 }
-.content-haeder {
+.header-content .social-links {
+    width: 100%;
     position: relative;
 }
-.content-haeder .social-links {
-    display: grid;
-    grid-template-columns: 1% 1% 1% 1% 1%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    column-gap: 71px;
-}
-.content-haeder .social-links .link-item {
+.header-content .social-links .link{
     text-decoration: none;
 }
-
-.content-haeder .social-links .link-item .fas,
-.content-haeder .social-links .link-item .fab{
-    position: absolute;
-    top: 80%;
+.header-content .social-links .link i{
+    position: relative;
+    top: -198px;
+    width: 10%;
     color: #fff;
+    z-index: 4;
+    font-size: 30px;
+}
+.header-content .social-links .link i::after{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 27px;
+    padding: 25%;
+    border: 3px solid #deac73;
+    border-radius: 5px;
+    transform: rotate(-45deg);
+    background-color: #660f0e;
+    z-index: -1;
+}
+@media (max-width: 320px) {
+    .header-content .social-links .link i{
+        top: -126px;
+        width: 13%;
+        font-size: 15px;
+    }
+    .header-content .social-links .link i::after{
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: 4px;
+        padding: 29%;
+        border: 3px solid #deac73;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: #660f0e;
+        z-index: -1;
+    }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .header-content .social-links .link i{
+        top: -126px;
+        width: 13%;
+        font-size: 20px;
+    }
+    .header-content .social-links .link i::after{
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: 6px;
+        padding: 29%;
+        border: 3px solid #deac73;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: #660f0e;
+        z-index: -1;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .header-content .social-links .link i{
+        top: -126px;
+        width: 15%;
+        font-size: 25px;
+    }
+    .header-content .social-links .link i::after{
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        padding: 25%;
+        border: 3px solid #deac73;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: #660f0e;
+        z-index: -1;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-content .social-links .link i{
+        top: -126px;
+        width: 13%;
+        font-size: 34px;
+    }
+    .header-content .social-links .link i::after{
+        content: "";
+        position: absolute;
+        top: -17px;
+        left: 19px;
+        padding: 29%;
+        border: 3px solid #deac73;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: #660f0e;
+        z-index: -1;
+    }
+    
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .header-content .social-links .link i{
+        top: -126px;
+        width: 10%;
+        font-size: 39px;
+    }
+    .header-content .social-links .link i::after{
+        content: "";
+        position: absolute;
+        top: -17px;
+        left: 21px;
+        padding: 29%;
+        border: 3px solid #deac73;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: #660f0e;
+        z-index: -1;
+    }
+    
+}
+@media (min-width: 1280px) {
+    
+    .header-content .social-links .link i{
+        top: -126px;
+        width: 10%;
+        font-size: 40px;
+    }
+    .header-content .social-links .link i::after{
+        content: "";
+        position: absolute;
+        top: -17px;
+        left: 21px;
+        padding: 29%;
+        border: 3px solid #deac73;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+        background-color: #660f0e;
+        z-index: -1;
+    }
+    
 }
 #big-section {
     border-radius: 18px;
@@ -74,6 +203,10 @@ body, html {
 }
 .icons .link {
     text-decoration: none;
+    transition: transform 260ms ease-in-out;
+}
+.icons .link:hover {
+    transform: translateY(-12px);
 }
 .icons .link .sms-img{
     width: 48px;
